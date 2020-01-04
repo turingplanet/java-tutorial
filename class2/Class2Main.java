@@ -1,13 +1,23 @@
-package class2;
-
-public class Main {
+public class Class2Main {
 
     public static void main(String[] args) {
-//        mathFun();
-//        isString();
+        int num1 = 10;
+        int num2 = 20;
+        System.out.println(Math.max(num1, num2));
+        System.out.println(Math.min(num1, num2));
+
+    }
+
+    public static void casting() {
         double num = 9.9;
         int intNum = (int)num;
         System.out.println(intNum);
+    }
+
+    public static void bitOperation() {
+        int num1 = 1; // 001
+        int num2 = 4; // 100
+        System.out.println(num1 | num2);
     }
 
     public static void isString() {
