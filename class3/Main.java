@@ -3,22 +3,24 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-//        score1();
-//        score2();
-//        score3();
-
-//        conditionCheck1();
-//        conditionCheck2();
-//        switchCondition();
-
-//        loop1();
-//        loop2();
-//        forLoop();
-//        forLoop2();
-
-//        breakContinue1();
-//        breakContinue2();
-        breakContinue3();
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
+        while(true) {
+            System.out.print("Please enter a number: ");
+            int num = scanner.nextInt();
+            if (num % 2 == 0) {
+                sum += num;
+                System.out.println("sum = " + sum);
+                continue;
+            }
+            scanner.nextLine();
+            System.out.print("Do you want to continue?(Y/N): ");
+            String response = scanner.nextLine();
+            if(response.toLowerCase().charAt(0) == 'n') {
+                break;
+            }
+        }
+        System.out.println("Total sum = " + sum);
     }
 
     public static void score1() {
@@ -33,17 +35,6 @@ public class Main {
     }
 
     public static void score2() {
-        int score = 70, reward = 0;
-        if(score >= 90) {
-            reward = score * 2;
-        } else if (score >= 80) {
-            reward = score * 3 / 2;
-        } else if (score >= 60) {
-            reward = score;
-        } else {
-            reward = 0;
-        }
-        System.out.println("Reward: " + reward);
 
     }
 
