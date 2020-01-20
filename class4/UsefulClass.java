@@ -5,9 +5,16 @@ import java.util.List;
 public class UsefulClass {
 
     public static void main(String[] args) {
-//        string();
-//        maths();
         arrays();
+    }
+    public static void arrays() {
+        Integer[] array = {5, 7, 6, 3, 4, 2, 1};
+        Arrays.sort(array);
+        System.out.println(Arrays.toString(array));
+        List<Integer> arrayList = Arrays.asList(array);
+        System.out.println("This is awesome");
+        Collections.reverse(arrayList);
+        System.out.println(arrayList);
     }
 
     public static void string() {
@@ -34,12 +41,4 @@ public class UsefulClass {
         System.out.println(minNum);
     }
 
-    public static void arrays() {
-        Integer[] array = {5, 7, 6, 3, 4, 2, 1};
-        Arrays.sort(array);
-        System.out.println(Arrays.toString(array));
-        List<Integer> arrayList = Arrays.asList(array);
-        Collections.reverse(arrayList);
-        System.out.println(arrayList);
-    }
 }

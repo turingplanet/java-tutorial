@@ -1,22 +1,9 @@
 public class Class4 {
 
     public static void main(String[] args) {
-//        myMethod();
-
-//        printOppositeNum(-5);
-//        printName("Wang", "Xiao");
-
-//        System.out.println(plus5(5));
-//        int num = 7;
-//        if(isEven(num)) {
-//            num = sum(num, 1);
-//        } else {
-//            num = sum(num, -1);
-//        }
-//        System.out.println(num);
-        System.out.println(sum(1.1, 2.4));
         Class4 class4 = new Class4();
-        System.out.println(class4.sum2(1, 2));
+        int num = sum(1, 1);
+        System.out.println(num);
     }
 
     public static void myMethod() {
